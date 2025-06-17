@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Omega Hub | Key System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { font-family: sans-serif; background: #0d0d0d; color: white; text-align: center; margin-top: 5%; }
+    button { padding: 15px 25px; font-size: 18px; background: #111; color: #0ff; border: none; cursor: pointer; border-radius: 10px; }
+    #warn { display: none; color: red; font-weight: bold; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>🔐 Omega Hub Key System</h1>
+  <p>Click below to generate your 24-hour key</p>
+  <button onclick="generateKey()">Generate Key</button>
+  <p id="warn"></p>
+
+  <audio autoplay loop hidden>
+    <source src="background_music.mp3" type="audio/mp3" />
+  </audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3/dist/fp.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
